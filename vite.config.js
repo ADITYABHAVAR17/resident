@@ -26,13 +26,7 @@ export default defineConfig(() => {
       viteLogger(),
       viteTsconfigPaths(),
     ],
-    server: {
-      // this ensures that the browser opens upon server start
-      open: true,
-      // this sets a default port to 3000
-      port: 8000,
-      host: "127.0.0.1",
-    },
+   
     optimizeDeps: {
       esbuildOptions: {
         loader: {
